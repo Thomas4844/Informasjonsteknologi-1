@@ -1,0 +1,92 @@
+<script>
+    //oppgave 1
+    let byer = [
+        "Venezia",
+        "Liverpool",
+        "New York",
+        "Lisboa",
+        "Berlin",
+        "San Francisco",
+        "Amsterdam",
+    ];
+    byer.push("Budapest");
+    for (let i = 0; i < byer.length; i++) {
+        console.log(byer[i]);
+    }
+    function tilfeldigby() {
+        let byer = [
+            "Venezia",
+            "Liverpool",
+            "New York",
+            "Lisboa",
+            "Berlin",
+            "San Francisco",
+            "Amsterdam",
+        ];
+        let ind = Math.floor(Math.random() * byer.length);
+        byer.splice(ind, 1);
+
+        return byer[ind];
+    }
+    console.log("Din 1.destinasjon er", tilfeldigby());
+
+    // oppgave 2
+    let partall = [];
+    for (i = 0; i <= 30; i++) {
+        if (i % 2 == 0) {
+            partall.push(i);
+        }
+    }
+    console.log(partall);
+
+    for (i = 0; i <= 32; i++) {
+        if (i >= 8 && i <= 32) {
+            console.log(i);
+        } else {
+            console.log();
+        }
+    }
+
+    //oppgave 3
+    let tall = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55];
+    let sum = 0;
+
+    for (let i = 0; i < tall.length; i++) {
+        sum += tall[i];
+    }
+    console.log("Sum=", sum);
+
+    for (let i = 0; i < tall.length; i++) {
+        console.log(i, tall[i]);
+    }
+
+    //oppgave 4
+    function tilfeldigArray() {
+        let tilfeldig = Math.floor(Math.random() * 10);
+
+        return tilfeldig;
+    }
+    console.log(tilfeldigArray());
+
+    function tilfeldigArray2() {
+        let tilfeldigArray2 = [];
+        for (i = 0; i < 4; i++) {
+            let tilfeldig2 = Math.floor(Math.random() * 10);
+            tilfeldigArray2.push(tilfeldig2);
+        }
+
+        return tilfeldigArray2;
+    }
+    console.log(tilfeldigArray2());
+
+    //oppgave5
+    let skuddår = [];
+    for (i = 2020; i <= 2224; i++) {
+        if (i % 4 == 0 && i != 2100 && i != 2200) {
+            skuddår.push(i);
+        }
+    }
+    console.log(skuddår);
+
+    //oppgave6
+</script>

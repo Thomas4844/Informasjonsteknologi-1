@@ -1,0 +1,26 @@
+<script>
+    let tallene = [4, 8, 7, 9];
+
+    console.log(`Array:${tallene}`);
+    console.log(`Lengde: ${tallene.length}`);
+    console.log(`Første element: ${tallene[0]}`);
+    console.log(`Legg til nytt element: ${tallene.push(100)}-> ${tallene}`);
+
+    for (let i = 0; i < tallene.length; i++) {
+        //console.log(tallene[i]);
+        console.log(`${i}: ${tallene[i]}`);
+    }
+
+    for (let tall of tallene) {
+        console.log(tall);
+    }
+
+    tallene.forEach(function (tall) {
+        console.log(tall);
+    });
+
+    let drikker = ["Cola", "Fanta", "Iste", "Sprite"];
+    let mat = ["Kylling og baconsalat", "Club sandwitch", "Burger"];
+
+    let meny = [drikker, mat];
+</script>

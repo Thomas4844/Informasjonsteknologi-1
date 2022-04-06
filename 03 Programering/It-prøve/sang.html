@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let number = 99;
+            for (let i = 1; i <= 99; i++) {
+                console.log(
+                    `${number} bottles of beer on the wall, ${number} bottles of beer.`
+                );
+                console.log(
+                    `Take one down and pass it around, ${number} bottles of beer on the wall.`
+                );
+                number = number - 1;
+                console.log("");
+
+                if (number == 0) {
+                    console.log(
+                        "No more bottles of beer on the wall, no more bottles of beer."
+                    );
+                    console.log(
+                        "Go to the store and buy some more, 99 bottles of beer on the wall."
+                    );
+                }
+            }
+        </script>
+    </body>
+</html>

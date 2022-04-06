@@ -1,0 +1,20 @@
+<script>
+    let a = [];
+    for (let i = 0; i < 10; i++) {
+        let ran = Math.floor(Math.random() * 1000) + 1;
+        a.push(ran);
+    }
+    /* let a = [1, 23, 32, 39, 12, 42, 31, 19]; */ //dette er bare et array skrevet inn
+    for (i = 0; i < a.length; i++) {
+        for (x = i; x < a.length - i; x++) {
+            let b = a[i];
+            let c = a[x];
+            if (b > a[x]) {
+                a[x] = b;
+                a[i] = c;
+            }
+        }
+    }
+
+    console.log(a);
+</script>

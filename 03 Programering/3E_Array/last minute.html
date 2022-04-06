@@ -1,0 +1,24 @@
+<script>
+    let tall = [1, 2, 3, 4, 6, 8, 15, 12];
+    for (let i = 0; i < tall.length; i++) {
+        console.log(tall[i]);
+    }
+    let sum = 0;
+
+    for (let i = 0; i < tall.length; i++) {
+        sum += tall[i];
+    }
+
+    console.log("Sum=", sum);
+
+    // Lagrer det første tallet i arrayen i en variabel
+    let storst = tall[0];
+
+    for (let i = 0; i < tall.length; i++) {
+        if (tall[i] > storst) {
+            storst = tall[i];
+        }
+    }
+
+    console.log(storst, "er størst"); // Skriver ut: 15
+</script>

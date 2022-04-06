@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let tall = Math.floor(Math.random() * 10) + 1;
+            let valgttall = Number(prompt("Velg tall 1-10:"));
+            let ant = 1;
+            while (valgttall != tall) {
+                if (valgttall > tall) {
+                    valgttall = Number(
+                        prompt("Det er feil. Tallet er lavere :")
+                    );
+                } else {
+                    valgttall = Number(
+                        prompt("Det er feil. Tallet er høyere :")
+                    );
+                }
+                ant++;
+            }
+            alert(`Gratulerer,${valgttall} er rett.\n Du brukte ${ant}forsøk.`);
+        </script>
+    </body>
+</html>

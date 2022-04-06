@@ -1,0 +1,12 @@
+<script>
+    function tilfeldigOrd() {
+        let mittAlfabet = ["A", "B", "C", "D", "E", "F", "G"];
+        let ord = "";
+        for (let i = 0; i < 3; i++) {
+            let index = Math.floor(Math.random() * mittAlfabet.length);
+            ord += mittAlfabet[index];
+        }
+        return ord;
+    }
+    console.log(tilfeldigOrd());
+</script>

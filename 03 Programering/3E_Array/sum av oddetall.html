@@ -1,0 +1,16 @@
+<script>
+    function sumArray(liste) {
+        sum = 0;
+
+        for (let i = 0; i < liste.length; i++) {
+            if (liste[i] % 2 > 0) {
+                sum = sum + liste[i];
+            }
+        }
+
+        console.log(sum);
+    }
+    sumArray([3, 8, 7]);
+    sumArray([-1, 8, -7, 2, 8, -10]);
+    sumArray([3, 4, 6, 5, 23, 65, 34, 789]);
+</script>
